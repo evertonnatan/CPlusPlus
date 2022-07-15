@@ -46,3 +46,5 @@ int main()
     return 0; 
 
 }
+
+//Referência: https://cplusplus.com/reference/cmath/
