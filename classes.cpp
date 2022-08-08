@@ -40,3 +40,21 @@ class GradeBook
     string courseName; // nome do curso para esse GradeBook
 }; // fim da classe GradeBook
 
+// a função main inicia a execução do programa
+int main ()
+{
+    string nameOfCourse; // strings de caracteres para armazenar o nome do curso
+    GradeBook myGradeBook; // cria um objeto GradeBook chamado myGradeBook
+
+    // exibe o valor inicial de courseName
+    cout << "Initial course name is: " << myGradeBook.getCourseName() << endl;
+
+    // solicita, insere e configura o nome do curso
+    cout << "\nPlease, enter the course name: " << endl;
+    getline( cin, nameOfCourse ); // lê o nome de um curso com espaços em branco
+    myGradeBook.setCourseName( nameOfCourse ); // configura o nome do curso
+
+    cout << endl; // gera saída de uma linha em branco
+    myGradeBook.displayMessage(); //exibe a mensagem com o novo nome do curso
+    return 0; // indica terminação bem sucedida
+} // fim da função main
